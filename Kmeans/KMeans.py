@@ -133,8 +133,7 @@ def clusterClubs(numClust=5):
     myCentroids, clustAssing = biKMeans(datMat, numClust, distMeans=distSLC)
     fig = plt.figure()
     rect=[0.1,0.1,0.8,0.8]
-    scatterMarkers=['s', 'o', '^', '8', 'p', \
-                    'd', 'v', 'h', '>', '<']
+    scatterMarkers=['s', 'o', '^', '8', 'p','d', 'v', 'h', '>', '<']
     axprops = dict(xticks=[], yticks=[])
     ax0=fig.add_axes(rect, label='ax0', **axprops)
     imgP = plt.imread('Portland.png')
